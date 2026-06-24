@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fmathenomad.github.io/aiverify/sitemap.xml
