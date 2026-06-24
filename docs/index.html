@@ -473,12 +473,16 @@
         <div class="hero-stat-label">GitHub Stars</div>
       </div>
       <div class="hero-stat">
+        <div class="hero-stat-value" id="visitors-display">👁️ <span id="visitors-num">...</span></div>
+        <div class="hero-stat-label">Repo Visitors</div>
+      </div>
+      <div class="hero-stat">
         <div class="hero-stat-value" id="rules-display">🔍 15</div>
         <div class="hero-stat-label">Detection Rules</div>
       </div>
       <div class="hero-stat">
         <div class="hero-stat-value" id="langs-display">🌐 3</div>
-        <div class="hero-stat-label">Languages</div>
+        <div class="hero-stat-label">Languages Supported</div>
       </div>
     </div>
 
@@ -889,6 +893,20 @@ async function fetchStars() {
   }
 }
 fetchStars();
+
+// Live visitor count
+async function fetchVisitors() {
+  try {
+    const r = await fetch('https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FFMATheNomad%2Faiverify');
+    const d = await r.json();
+    const count = d.count || 0;
+    document.getElementById('visitors-num').textContent = count.toLocaleString();
+    document.getElementById('visitors-display').innerHTML = '👁️ <strong>' + count.toLocaleString() + '</strong>';
+  } catch(e) {
+    document.getElementById('visitors-num').textContent = '?';
+  }
+}
+fetchVisitors();
 
 // Track outbound links
 document.querySelectorAll('a[href^="https://github.com"], a[href^="https://x.com"], a[href^="https://pypi.org"]').forEach(a => {

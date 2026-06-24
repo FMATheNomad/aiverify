@@ -9,6 +9,7 @@
 [![Downloads](https://img.shields.io/pypi/dm/aiverify?color=success)](https://pypi.org/project/aiverify/)
 [![License](https://img.shields.io/pypi/l/aiverify)](LICENSE)
 [![CI](https://img.shields.io/github/actions/workflow/status/FMATheNomad/aiverify/ci.yml?logo=github)](.github/workflows/ci.yml)
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FFMATheNomad%2Faiverify&label=visitors&countColor=%23263759&style=flat-square)](https://github.com/FMATheNomad/aiverify)
 [![Code style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Sponsor](https://img.shields.io/badge/sponsor-❤️-red?logo=github)](https://github.com/sponsors/FMATheNomad)
 
