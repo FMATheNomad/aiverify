@@ -4,10 +4,8 @@
 
 ### *"Your AI coder is hallucinating. Here's the proof in 3 seconds."*
 
-[![PyPI version](https://img.shields.io/pypi/v/aiverify?color=blue&logo=python&logoColor=white)](https://pypi.org/project/aiverify/)
-[![Python versions](https://img.shields.io/pypi/pyversions/aiverify?logo=python&logoColor=white)](https://pypi.org/project/aiverify/)
-[![Downloads](https://img.shields.io/pypi/dm/aiverify?color=success)](https://pypi.org/project/aiverify/)
-[![License](https://img.shields.io/pypi/l/aiverify)](LICENSE)
+[![Python versions](https://img.shields.io/badge/python-3.11%2B-blue?logo=python&logoColor=white)](https://github.com/FMATheNomad/aiverify)
+[![License](https://img.shields.io/github/license/FMATheNomad/aiverify)](LICENSE)
 [![CI](https://img.shields.io/github/actions/workflow/status/FMATheNomad/aiverify/ci.yml?logo=github)](.github/workflows/ci.yml)
 [![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FFMATheNomad%2Faiverify&label=visitors&countColor=%23263759&style=flat-square)](https://github.com/FMATheNomad/aiverify)
 [![Code style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
@@ -19,7 +17,7 @@
 
 Works with Claude-generated code, Cursor, Copilot, ChatGPT, Tabnine, Replit AI, and every other AI coding tool.
 
-`pip install aiverify` → `aiverify your-code.py` → done.
+`pip install aiverify-cli-cli` → `aiverify your-code.py` → done.
 
 </div>
 
@@ -108,8 +106,8 @@ aiverify — AI Code Verification
 ## ⚡ Quick Start
 
 ```bash
-# Install
-pip install aiverify
+# Install (package name differs from CLI command)
+pip install aiverify-cli
 
 # Scan a single file
 aiverify app.py
@@ -126,6 +124,9 @@ aiverify app.py --rules PY002 GEN001
 # See all available rules
 aiverify --list-rules
 ```
+
+> ⚠️ **PyPI note:** Package is `aiverify-cli` (the name `aiverify` belongs to another project).  
+> After `pip install aiverify-cli`, just use `aiverify` as the CLI command.
 
 ---
 
@@ -187,7 +188,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install aiverify
+      - run: pip install aiverify-cli
       - run: aiverify src/ --json
 ```
 

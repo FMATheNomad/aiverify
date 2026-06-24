@@ -3,7 +3,7 @@ requires = ["setuptools>=68.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "aiverify"
+name = "aiverify-cli"
 version = "0.1.0"
 description = "Verify AI-generated code before you commit"
 readme = "README.md"

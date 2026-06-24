@@ -7,7 +7,7 @@
   <!-- Primary Meta Tags -->
   <title>aiverify — Detect AI Hallucinations in Code | Free CLI Tool</title>
   <meta name="title" content="aiverify — Verify AI-Generated Code Before You Commit">
-  <meta name="description" content="Your AI coder is hallucinating. aiverify catches invented functions, leaked API keys, deprecated APIs & more in 3 seconds. pip install aiverify. Open source.">
+  <meta name="description" content="Your AI coder is hallucinating. aiverify catches invented functions, leaked API keys, deprecated APIs & more in 3 seconds. pip install aiverify-cli. Open source.">
   <meta name="keywords" content="ai code review, hallucination detection, code quality, static analysis, claude, copilot, cursor, chatgpt, python, javascript, typescript, open source, cli tool, tree-sitter, ai generated code">
   <meta name="author" content="FMA Software Labs">
   <meta name="robots" content="index, follow">
@@ -28,7 +28,7 @@
   <meta name="twitter:site" content="@fmathenomad">
   <meta name="twitter:creator" content="@fmathenomad">
   <meta name="twitter:title" content="aiverify — Your AI Coder Is Hallucinating">
-  <meta name="twitter:description" content="Detect AI hallucinations in code before they ship. 3 seconds, zero config. pip install aiverify. Open source.">
+  <meta name="twitter:description" content="Detect AI hallucinations in code before they ship. 3 seconds, zero config. pip install aiverify-cli. Open source.">
   <meta name="twitter:image" content="https://og-image.vercel.app/aiverify?text=aiverify&sub=AI%20Hallucination%20Detector&color=58a6ff&bg=0d1117&fontSize=80">
 
   <!-- JSON-LD: SoftwareApplication -->
@@ -91,7 +91,7 @@
         "name": "How do I install aiverify?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Install aiverify with pip: 'pip install aiverify'. Requires Python 3.11+. Then run 'aiverify your-code.py' on any Python, JavaScript, or TypeScript file."
+          "text": "Install aiverify with pip: 'pip install aiverify-cli'. Requires Python 3.11+. Then run 'aiverify your-code.py' on any Python, JavaScript, or TypeScript file."
         }
       },
       {
@@ -465,7 +465,7 @@
   <div class="container animate">
     <div class="hero-badge">🔍 Open Source · MIT · Zero Config</div>
     <h1>Your AI coder is <em>hallucinating</em>.<br>Here's the proof.</h1>
-    <p>Claude, Copilot, Cursor, ChatGPT — they all invent functions, leak API keys, and use deprecated APIs. <strong>aiverify</strong> catches it in <strong>3 seconds</strong>. <code style="background:var(--bg-card);padding:2px 8px;border-radius:4px;">pip install aiverify</code></p>
+    <p>Claude, Copilot, Cursor, ChatGPT — they all invent functions, leak API keys, and use deprecated APIs. <strong>aiverify</strong> catches it in <strong>3 seconds</strong>. <code style="background:var(--bg-card);padding:2px 8px;border-radius:4px;">pip install aiverify-cli</code></p>
 
     <div class="hero-stats" id="live-stats">
       <div class="hero-stat">
@@ -703,7 +703,7 @@
           <span class="faq-icon">▼</span>
         </button>
         <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-          <div itemprop="text">Install: <code>pip install aiverify</code> (requires Python 3.11+). Then run: <code>aiverify your-code.py</code>. To scan a directory: <code>aiverify src/</code>. For CI/CD: <code>aiverify src/ --json</code>. To filter specific rules: <code>aiverify app.py --rules PY002 GEN001</code>.</div>
+          <div itemprop="text">Install: <code>pip install aiverify-cli</code> (PyPI package name, requires Python 3.11+). The CLI command is <code>aiverify</code>. Then run: <code>aiverify your-code.py</code>. To scan a directory: <code>aiverify src/</code>. For CI/CD: <code>aiverify src/ --json</code>. To filter specific rules: <code>aiverify app.py --rules PY002 GEN001</code>.</div>
         </div>
       </div>
 
@@ -758,7 +758,7 @@
     <p class="section-sub">One command. No dependencies beyond Python 3.11+. Works on Linux, macOS, and Windows.</p>
     <div class="install-cmd-wrapper">
       <div class="install-cmd">
-        <code>pip install aiverify</code>
+        <code>pip install aiverify-cli</code>
         <button class="copy-btn" onclick="copyCmd(this)">Copy</button>
       </div>
     </div>
@@ -836,7 +836,7 @@
       <a href="https://github.com/FMATheNomad/aiverify/issues">Issues</a>
       <a href="https://github.com/FMATheNomad/aiverify/releases">Releases</a>
       <a href="https://github.com/sponsors/FMATheNomad">Sponsor</a>
-      <a href="https://pypi.org/project/aiverify/">PyPI</a>
+      <a href="https://pypi.org/project/aiverify-cli/">PyPI</a>
       <a href="https://x.com/fmathenomad">X / Twitter</a>
     </div>
     <p>Built with ❤️ by <a href="https://github.com/FMATheNomad" style="color:var(--accent);text-decoration:none;">FMATheNomad</a> · MIT Licensed</p>
@@ -853,7 +853,7 @@ function toggleFaq(btn) {
 
 // Copy pip command
 function copyCmd(btn) {
-  navigator.clipboard.writeText('pip install aiverify').then(() => {
+  navigator.clipboard.writeText('pip install aiverify-cli').then(() => {
     btn.textContent = 'Copied!';
     setTimeout(() => btn.textContent = 'Copy', 2000);
   });
