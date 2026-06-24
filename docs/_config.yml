@@ -1,5 +1,0 @@
-# GitHub Pages config — serve static files directly, no Jekyll processing
-include:
-  - _headers
-exclude:
-  - README.md
